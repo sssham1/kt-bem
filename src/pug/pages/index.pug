@@ -1,0 +1,103 @@
+-
+    var breadcrumbItems = [
+        { title: 'Главная', href: '#' },
+        { title: 'Каталог', href: '#' },
+        { title: 'Смартфоны' }
+    ];
+
+    var filterGroups = [
+        {
+            title: 'Бренды',
+            isBrands: true,
+            options: [
+                { label: 'Samsung', checked: true },
+                { label: 'Apple', checked: true },
+                { label: 'Xiaomi', checked: false },
+                { label: 'Huawei', checked: false }
+            ]
+        },
+        {
+            title: 'Цена',
+            isBrands: false,
+            options: [
+                { label: 'до 30000 ₽', checked: false },
+                { label: '30000 - 60000 ₽', checked: false },
+                { label: 'от 60000 ₽', checked: false }
+            ]
+        }
+    ];
+
+    var products = [
+        {
+            title: 'iPhone 15 Pro Max',
+            price: '99 990 ₽',
+            image: 'img/Apple-iPhone-15-Pro.jpg',
+            rating: '★★★★☆ (4.5)',
+            isSale: false,
+            isCompact: false
+        },
+        {
+            title: 'Samsung Galaxy S24',
+            price: '79 990 ₽',
+            image: 'img/S24.jpg',
+            rating: '★★★★★ (5.0)',
+            isSale: true,
+            isCompact: false
+        },
+        {
+            title: 'Xiaomi 14 Ultra',
+            price: '69 990 ₽',
+            image: 'img/Xiaomi 14.jpg',
+            rating: '★★★★☆ (4.3)',
+            isSale: true,
+            isCompact: true
+        },
+        {
+            title: 'Google Pixel 8 Pro',
+            price: '84 990 ₽',
+            image: 'img/Google Pixel 8 Pro.jpg',
+            rating: '★★★★☆ (4.4)',
+            isSale: true,
+            isCompact: false
+        },
+        {
+            title: 'OnePlus 12',
+            price: '74 990 ₽',
+            image: 'img/OnePlus 12.jpg',
+            rating: '★★★★☆ (4.6)',
+            isSale: false,
+            isCompact: false
+        },
+        {
+            title: 'Sony Xperia 1 VI',
+            price: '89 990 ₽',
+            image: 'img/Sony Xperia 1 VI.jpg',
+            rating: '★★★★☆ (4.2)',
+            isSale: true,
+            isCompact: false
+        }
+    ];
+
+    var currentPage = 1;
+    var totalPages = 3;
+
+include ../blocks/breadcrumbs
+include ../blocks/filter
+include ../blocks/product-card
+include ../blocks/product-grid
+include ../blocks/pagination
+include ../blocks/catalog-layout
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Каталог товаров — Интернет-магазин
+        link(rel='stylesheet' href='dist/bundle.css')
+    body
+        .page
+            .page__container
+                +breadcrumbs(breadcrumbItems, true)
+                +catalog-layout(filterGroups, products, currentPage, totalPages)
+        script(src='dist/bundle.js' defer)

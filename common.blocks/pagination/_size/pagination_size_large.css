@@ -1,0 +1,9 @@
+.pagination_size_large .pagination__link {
+    padding: 12px 18px;
+    font-size: 16px;
+}
+
+.pagination_size_large .pagination__dots {
+    padding: 12px 18px;
+    font-size: 16px;
+}

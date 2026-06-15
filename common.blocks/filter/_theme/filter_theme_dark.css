@@ -1,0 +1,16 @@
+.filter_theme_dark {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.filter_theme_dark .filter__group-title {
+    color: #ecf0f1;
+}
+
+.filter_theme_dark .filter__label {
+    color: #bdc3c7;
+}
+
+.filter_theme_dark .filter__label:hover {
+    color: #3498db;
+}

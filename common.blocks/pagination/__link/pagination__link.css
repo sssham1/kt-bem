@@ -1,0 +1,13 @@
+.pagination__link {
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #dee2e6;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.pagination__link:hover {
+    background-color: #e9ecef;
+}

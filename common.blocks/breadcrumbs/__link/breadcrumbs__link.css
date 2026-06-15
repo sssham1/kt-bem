@@ -1,0 +1,8 @@
+.breadcrumbs__link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.breadcrumbs__link:hover {
+    text-decoration: underline;
+}

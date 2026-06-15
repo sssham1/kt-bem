@@ -1,0 +1,8 @@
+.catalog-layout {
+    flex-direction: column;
+}
+
+.catalog-layout__filter {
+    width: 100%;
+    margin-bottom: 20px;
+}

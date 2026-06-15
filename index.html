@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров — Интернет-магазин</title>
+    <link rel="stylesheet" href="dist/bundle.css">
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__container">
+        <nav class="breadcrumbs breadcrumbs_size_large">
+          <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+          </div><span class="breadcrumbs__separator">/</span>
+          <div class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a>
+          </div><span class="breadcrumbs__separator">/</span>
+          <div class="breadcrumbs__item"><span class="breadcrumbs__link">Смартфоны</span>
+          </div>
+        </nav>
+        <div class="catalog-layout catalog-layout_view_default">
+          <aside class="filter filter_theme_dark catalog-layout__filter">
+            <div class="filter__group">
+              <div class="filter__group-title">Бренды</div>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox" checked="checked" data-brand="Samsung"/> Samsung
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox" checked="checked" data-brand="Apple"/> Apple
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox" data-brand="Xiaomi"/> Xiaomi
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox" data-brand="Huawei"/> Huawei
+              </label>
+            </div>
+            <div class="filter__group">
+              <div class="filter__group-title">Цена</div>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox"/> до 30000 ₽
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox"/> 30000 - 60000 ₽
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox"/> от 60000 ₽
+              </label>
+            </div>
+          </aside>
+          <div class="product-grid product-grid_columns_3 catalog-layout__grid">
+            <div class="product-grid__item">
+              <article class="product-card"><img class="product-card__image" src="img/Apple-iPhone-15-Pro.jpg" alt="iPhone 15 Pro Max"/>
+                <div class="product-card__title">iPhone 15 Pro Max</div>
+                <div class="product-card__price">99 990 ₽</div>
+                <div class="product-card__rating">★★★★☆ (4.5)</div>
+                <button class="product-card__button" type="button">В корзину</button>
+              </article>
+            </div>
+            <div class="product-grid__item">
+              <article class="product-card product-card_sale"><img class="product-card__image" src="img/S24.jpg" alt="Samsung Galaxy S24"/>
+                <div class="product-card__title">Samsung Galaxy S24</div>
+                <div class="product-card__price">79 990 ₽</div>
+                <div class="product-card__rating">★★★★★ (5.0)</div>
+                <button class="product-card__button" type="button">В корзину</button>
+              </article>
+            </div>
+            <div class="product-grid__item">
+              <article class="product-card product-card_sale product-card_size_compact"><img class="product-card__image" src="img/Xiaomi 14.jpg" alt="Xiaomi 14 Ultra"/>
+                <div class="product-card__title">Xiaomi 14 Ultra</div>
+                <div class="product-card__price">69 990 ₽</div>
+                <div class="product-card__rating">★★★★☆ (4.3)</div>
+                <button class="product-card__button" type="button">В корзину</button>
+              </article>
+            </div>
+            <div class="product-grid__item">
+              <article class="product-card product-card_sale"><img class="product-card__image" src="img/Google Pixel 8 Pro.jpg" alt="Google Pixel 8 Pro"/>
+                <div class="product-card__title">Google Pixel 8 Pro</div>
+                <div class="product-card__price">84 990 ₽</div>
+                <div class="product-card__rating">★★★★☆ (4.4)</div>
+                <button class="product-card__button" type="button">В корзину</button>
+              </article>
+            </div>
+            <div class="product-grid__item">
+              <article class="product-card"><img class="product-card__image" src="img/OnePlus 12.jpg" alt="OnePlus 12"/>
+                <div class="product-card__title">OnePlus 12</div>
+                <div class="product-card__price">74 990 ₽</div>
+                <div class="product-card__rating">★★★★☆ (4.6)</div>
+                <button class="product-card__button" type="button">В корзину</button>
+              </article>
+            </div>
+            <div class="product-grid__item">
+              <article class="product-card product-card_sale"><img class="product-card__image" src="img/Sony Xperia 1 VI.jpg" alt="Sony Xperia 1 VI"/>
+                <div class="product-card__title">Sony Xperia 1 VI</div>
+                <div class="product-card__price">89 990 ₽</div>
+                <div class="product-card__rating">★★★★☆ (4.2)</div>
+                <button class="product-card__button" type="button">В корзину</button>
+              </article>
+            </div>
+          </div>
+          <nav class="pagination pagination_size_large">
+            <div class="pagination__item pagination__item pagination__item_current"><a class="pagination__link" href="#">1</a></div>
+            <div class="pagination__item pagination__item"><a class="pagination__link" href="#">2</a></div>
+            <div class="pagination__item pagination__item"><a class="pagination__link" href="#">3</a></div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script src="dist/bundle.js" defer></script>
+  </body>
+</html>

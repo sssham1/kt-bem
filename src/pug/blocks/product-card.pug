@@ -1,0 +1,11 @@
+mixin product-card(title, price, image, rating, isSale, isCompact)
+    -
+        var blockClasses = 'product-card';
+        if (isSale) blockClasses += ' product-card_sale';
+        if (isCompact) blockClasses += ' product-card_size_compact';
+    article(class=blockClasses)
+        img.product-card__image(src=image alt=title)
+        .product-card__title= title
+        .product-card__price= price
+        .product-card__rating= rating
+        button.product-card__button(type='button') В корзину

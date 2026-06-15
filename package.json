@@ -1,0 +1,20 @@
+{
+  "name": "bem-catalog",
+  "version": "1.0.0",
+  "description": "BEM catalog with Pug, Gulp and level overrides",
+  "scripts": {
+    "build": "gulp build",
+    "build:mobile": "gulp buildCSS --level mobile && gulp buildJS && gulp buildHTML",
+    "watch": "gulp watch",
+    "build:css:mobile": "gulp buildCSS --level mobile",
+    "build:css:desktop": "gulp buildCSS --level desktop"
+  },
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

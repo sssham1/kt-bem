@@ -1,0 +1,15 @@
+mixin pagination(currentPage, totalPages, isLarge)
+    -
+        var blockClasses = 'pagination';
+        if (isLarge) blockClasses += ' pagination_size_large';
+        var pages = [];
+        for (var page = 1; page <= totalPages; page++) {
+            pages.push(page);
+        }
+    nav(class=blockClasses)
+        each page in pages
+            -
+                var itemClasses = 'pagination__item';
+                if (page === currentPage) itemClasses += ' pagination__item_current';
+            .pagination__item(class=itemClasses)
+                a.pagination__link(href='#')= page

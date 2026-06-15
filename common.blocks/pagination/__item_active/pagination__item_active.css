@@ -1,0 +1,5 @@
+.pagination__item_active .pagination__link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}

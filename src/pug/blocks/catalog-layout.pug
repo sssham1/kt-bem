@@ -1,0 +1,5 @@
+mixin catalog-layout(filterGroups, products, currentPage, totalPages)
+    .catalog-layout.catalog-layout_view_default
+        +filter(filterGroups, true, 'catalog-layout__filter')
+        +product-grid(products, 'catalog-layout__grid')
+        +pagination(currentPage, totalPages, true)

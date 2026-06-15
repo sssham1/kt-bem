@@ -1,0 +1,17 @@
+mixin filter(groups, isDarkTheme, mixClasses)
+    -
+        var blockClasses = 'filter';
+        if (isDarkTheme) blockClasses += ' filter_theme_dark';
+        if (mixClasses) blockClasses += ' ' + mixClasses;
+    aside(class=blockClasses)
+        each group in groups
+            .filter__group
+                .filter__group-title= group.title
+                each option in group.options
+                    label.filter__label
+                        input.filter__checkbox(
+                            type='checkbox'
+                            checked=option.checked
+                            data-brand=group.isBrands ? option.label : undefined
+                        )
+                        = ' ' + option.label

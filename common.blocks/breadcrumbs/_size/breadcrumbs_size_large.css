@@ -1,0 +1,7 @@
+.breadcrumbs_size_large {
+    font-size: 18px;
+}
+
+.breadcrumbs_size_large .breadcrumbs__separator {
+    margin: 0 12px;
+}

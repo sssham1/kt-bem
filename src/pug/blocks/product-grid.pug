@@ -1,0 +1,15 @@
+mixin product-grid(products, mixClasses)
+    -
+        var gridClasses = 'product-grid product-grid_columns_3';
+        if (mixClasses) gridClasses += ' ' + mixClasses;
+    div(class=gridClasses)
+        each product in products
+            .product-grid__item
+                +product-card(
+                    product.title,
+                    product.price,
+                    product.image,
+                    product.rating,
+                    product.isSale,
+                    product.isCompact
+                )

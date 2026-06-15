@@ -1,0 +1,13 @@
+mixin breadcrumbs(items, isLarge)
+    -
+        var blockClasses = 'breadcrumbs';
+        if (isLarge) blockClasses += ' breadcrumbs_size_large';
+    nav(class=blockClasses)
+        each item, index in items
+            if index > 0
+                span.breadcrumbs__separator /
+            .breadcrumbs__item
+                if item.href
+                    a.breadcrumbs__link(href=item.href)= item.title
+                else
+                    span.breadcrumbs__link= item.title
